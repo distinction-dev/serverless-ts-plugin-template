@@ -1,5 +1,5 @@
 {
-  "name": "@distinction-dev/backend-package-name",
+  "name": "@distinction-dev/serverless-ts-template",
   "version": "0.0.0-development",
   "description": "Template repository for us to use to create TS based backend packages",
   "scripts": {
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/distinction-dev/package-name.git"
+    "url": "git+https://github.com/distinction-dev/serverless-ts-template.git"
   },
   "license": "MIT",
   "author": {
@@ -34,9 +34,9 @@
     "typescript"
   ],
   "bugs": {
-    "url": "https://github.com/distinction-dev/package-name/issues"
+    "url": "https://github.com/distinction-dev/serverless-ts-template/issues"
   },
-  "homepage": "https://github.com/distinction-dev/package-name#readme",
+  "homepage": "https://github.com/distinction-dev/serverless-ts-template#readme",
   "devDependencies": {
     "@types/chai": "^4.3.3",
     "@types/mocha": "^10.0.0",
