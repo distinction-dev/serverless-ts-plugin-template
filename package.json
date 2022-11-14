@@ -5,6 +5,7 @@
   "scripts": {
     "clean": "rm -rf ./lib/",
     "build": "tsc -p ./tsconfig.cjs.json",
+    "watch": "tsc -p ./tsconfig.cjs.json --watch",
     "cm": "cz",
     "coverage": "codecov",
     "lint": "eslint ./src/ --fix",
