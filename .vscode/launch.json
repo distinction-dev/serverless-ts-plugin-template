@@ -2,16 +2,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Current TS File",
-      "type": "node",
+      "name": "Serverless Package",
       "request": "launch",
-      "runtimeExecutable": "node",
-      "args": ["${relativeFile}"],
-      "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
-      "envFile": "${workspaceFolder}/.env",
-      "cwd": "${workspaceRoot}",
-      "internalConsoleOptions": "openOnSessionStart",
-      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+      "runtimeArgs": ["run-script", "package", "--prefix", "test-service"],
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
     },
     {
       "type": "node",
