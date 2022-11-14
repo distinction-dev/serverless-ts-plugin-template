@@ -4,9 +4,7 @@
   "description": "Template repository for us to use to create TS based backend packages",
   "scripts": {
     "clean": "rm -rf ./lib/",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc -p ./tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
-    "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "build": "tsc -p ./tsconfig.cjs.json",
     "cm": "cz",
     "coverage": "codecov",
     "lint": "eslint ./src/ --fix",
@@ -15,22 +13,11 @@
     "type-check": "tsc --noEmit",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
   },
-  "main": "./lib/src/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
   "files": [
     "lib/**/*"
   ],
-  "exports": {
-    ".": {
-      "import": {
-        "types": "./lib/esm/types/index.d.ts",
-        "default": "./lib/esm/index.mjs"
-      },
-      "require": {
-        "types": "./lib/cjs/types/index.d.ts",
-        "default": "./lib/cjs/index.js"
-      }
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/distinction-dev/package-name.git"
