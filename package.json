@@ -72,5 +72,8 @@
     "branches": [
       "main"
     ]
+  },
+  "dependencies": {
+    "@types/serverless": "^3.12.8"
   }
 }

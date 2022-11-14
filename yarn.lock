@@ -592,6 +592,11 @@
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
 
+"@types/serverless@^3.12.8":
+  version "3.12.8"
+  resolved "https://registry.yarnpkg.com/@types/serverless/-/serverless-3.12.8.tgz#6a34e382e4887ce4e2dca1bf309e3015cd21e200"
+  integrity sha512-z2qnRRghiVU0Gi7tYDabDjCgz13nPw8uanTaWFTVr0YJ8H2+2D4tY3R45WQ50b4bG3gA/TP3sYNuxVI5Epf90g==
+
 "@typescript-eslint/eslint-plugin@^4.22.0":
   version "4.33.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.33.0.tgz#c24dc7c8069c7706bc40d99f6fa87edcb2005276"
